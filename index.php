@@ -39,25 +39,24 @@ if( isset($_POST['submit']) ){
     <title>zaptush test</title>
   </head>
   <body>
-  <div class="container-fluid d-flex">
-    <form class="mx-auto bg-light p-5"action="" method="POST"  novalidate="novalidate">
-        <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" id="username" name="username" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" class="form-control">
-        </div>
-        <input type="submit" name="submit" value="Check User" class="btn btn-outline-primary">
-        <?php if( $error ): ?>
-            <div class="alert alert-danger mt-3"><?= $error; ?></div>
-        <?php endif; ?>
-        <?php if( $success ): ?>
-            <div class="success alert-success mt-3"><?= $success; ?></div>
-        <?php endif; ?>
-    </form>
-  </div>
-    </form>
+      <div class="container-fluid d-flex">
+        <form class="mx-auto bg-light p-5"action="" method="POST"  novalidate="novalidate">
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control">
+            </div>
+            <input type="submit" name="submit" value="Check User" class="btn btn-outline-primary">
+            <?php if( $error ): ?>
+                <div class="alert alert-danger mt-3"><?= $error; ?></div>
+            <?php endif; ?>
+            <?php if( $success ): ?>
+                <div class="success alert-success mt-3"><?= $success; ?></div>
+            <?php endif; ?>
+        </form>
+      </div>
   </body>
 </html>
