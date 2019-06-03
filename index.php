@@ -51,10 +51,10 @@ if( isset($_POST['submit']) ){
             </div>
             <input type="submit" name="submit" value="Check User" class="btn btn-outline-primary">
             <?php if( $error ): ?>
-                <div class="alert alert-danger mt-3"><?= $error; ?></div>
+                <div class="alert alert-danger mt-3 p-3"><?= $error; ?></div>
             <?php endif; ?>
             <?php if( $success ): ?>
-                <div class="success alert-success mt-3"><?= $success; ?></div>
+                <div class="success alert-success mt-3 p-3"><?= $success; ?></div>
             <?php endif; ?>
         </form>
       </div>
