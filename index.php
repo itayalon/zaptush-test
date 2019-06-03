@@ -1,7 +1,7 @@
 <?php
 $error ='';
 $success ='';
-    if( isset($_POST['submit']) ){
+if( isset($_POST['submit']) ){
     // grabbing of input and trimming
     $username = !empty($_POST['username']) ? trim($_POST['username']) : '';
     $password = !empty($_POST['password']) ? trim($_POST['password']) : '';
